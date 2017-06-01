@@ -14,6 +14,14 @@ var multiply = function(number1, number2) {
 var divide = function(number1, number2) {
   return number1 / number2;
 };
+
+var sqrt = function(number1){
+  return Math.sqrt(number1);
+}
+
+var square = function(number1){
+  return number1 * number1;
+}
  //Jquery front end below
 $(document).ready(function() {
   $("form#calculator").submit(function(event) {
@@ -30,6 +38,10 @@ $(document).ready(function() {
       result = multiply(number1, number2);
     } else if (operator === "divide") {
       result = divide(number1, number2);
+    } else if (operator === "sqrt") {
+      result = sqrt(number1);
+    } else if (operator === "square") {
+      result = square(number1);
     }
     $("#output").empty().append(result);
   });
