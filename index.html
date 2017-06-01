@@ -10,7 +10,7 @@
 </head>
   <body>
     <div class="container">
-      <h1>Calculator</h1>
+      <h1 class="jumbotron">Calculator</h1>
       <form id="calculator">
         <div class="form-group">
           <label for="input1">1st number:</label>
@@ -46,6 +46,12 @@
         </div>
         <div class="radio">
           <label>
+            <input type="radio" name="operator" value="remainder">
+            remainder
+          </label>
+        </div>
+        <div class="radio">
+          <label>
             <input type="radio" name="operator" value="square">
             square
           </label>
@@ -56,11 +62,32 @@
             square root
           </label>
         </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="operator" value="cbrt">
+            cube root
+          </label>
+        </div>
         <button type="submit" class="btn btn-warning">Calculate</button>
       </form>
       <div id="output">
 
       </div>
     </div>
+    <div class="footer">
+				<h1 class="head-title">
+					<a href="">Calculator</a>
+				</h1>
+				<hr class="head-hr">
+				<ul class="head-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Arithmetic
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="triangle.html">Triangle</a>
+					</li>
+				<hr class="head-hr">
+			</div>
   </body>
 </html>
